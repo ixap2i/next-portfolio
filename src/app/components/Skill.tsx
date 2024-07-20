@@ -43,10 +43,12 @@ export default function Skill() {
   )
 };
 
-function HashIcon(props) {
+
+
+const HashIcon: React.FC<IconProps> = ({ className = '' }) => {
   return (
     <svg
-      {...props}
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -65,10 +67,10 @@ function HashIcon(props) {
   )
 };
 
-function CodepenIcon(props) {
+const CodepenIcon: React.FC<IconProps> = ({ className = '' }) => {
   return (
     <svg
-      {...props}
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
